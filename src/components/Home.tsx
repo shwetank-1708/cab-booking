@@ -38,11 +38,11 @@ const Home = () => {
     return () => clearInterval(autoPlay);
   }, [currentIndex]);
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? slides.length - 1 : prevIndex - 1
-    );
-  };
+  // const prevSlide = () => {
+  //   setCurrentIndex((prevIndex) =>
+  //     prevIndex === 0 ? slides.length - 1 : prevIndex - 1
+  //   );
+  // };
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
