@@ -5,6 +5,10 @@ import main_3 from "../assets/main_3.png";
 import main_4 from "../assets/main_4.png";
 import main_5 from "../assets/main_5.png";
 import main_6 from "../assets/main_6.png";
+import HomeServices from "../components/HomeServices";
+import { FaCarAlt } from "react-icons/fa";
+import { RiMoneyRupeeCircleFill } from "react-icons/ri";
+import { FaRoad } from "react-icons/fa";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,6 +67,32 @@ const Home = () => {
           <p className="text-black text-[40px] font-bold">
             Easy Online Taxi Booking Service in Uttarakhand
           </p>
+        </div>
+      </div>
+
+      <div className="">
+        <div className="flex justify-center gap-8 text-center ">
+          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl">
+            <FaCarAlt className="text-9xl text-blue-950" />
+            <HomeServices
+              heading="TOP-RATED SERVICE"
+              para="We're proud to be rated the best in the city, delivering top-quality service every time."
+            />
+          </div>
+          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl">
+            <RiMoneyRupeeCircleFill className="text-9xl text-blue-950" />
+            <HomeServices
+              heading="EXCLUSIVE DISCOUNTS"
+              para="Enjoy special offers and exclusive discounts for our loyal customers."
+            />
+          </div>
+          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2x">
+            <FaRoad className="text-9xl text-blue-950" />
+            <HomeServices
+              heading="EASY BOOKING"
+              para="Our booking process makes reserving a text quick and hassle-free."
+            />
+          </div>
         </div>
       </div>
     </div>
