@@ -5,7 +5,7 @@ interface HomeServicesProps {
 
 const HomeServices: React.FC<HomeServicesProps> = ({ heading, para }) => {
   return (
-    <div>
+    <div className="p-4">
       <h1 className="text-xl font-bold m-2 text-blue-900">{heading}</h1>
       <p className="text-gray-600">{para}</p>
     </div>

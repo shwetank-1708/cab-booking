@@ -9,6 +9,7 @@ import HomeServices from "../components/HomeServices";
 import { FaCarAlt } from "react-icons/fa";
 import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { FaRoad } from "react-icons/fa";
+import AboutSub from "../components/AboutSub";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -70,23 +71,23 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <div className="flex justify-center gap-8 text-center ">
-          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl">
+      <div className="mt-[-100px]">
+        <div className="flex justify-center gap-8 text-center flex-col md:flex-row items-center">
+          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <FaCarAlt className="text-9xl text-blue-950" />
             <HomeServices
               heading="TOP-RATED SERVICE"
               para="We're proud to be rated the best in the city, delivering top-quality service every time."
             />
           </div>
-          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl">
+          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <RiMoneyRupeeCircleFill className="text-9xl text-blue-950" />
             <HomeServices
               heading="EXCLUSIVE DISCOUNTS"
               para="Enjoy special offers and exclusive discounts for our loyal customers."
             />
           </div>
-          <div className="w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2x">
+          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <FaRoad className="text-9xl text-blue-950" />
             <HomeServices
               heading="EASY BOOKING"
@@ -94,6 +95,10 @@ const Home = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div>
+        <AboutSub />
       </div>
     </div>
   );
