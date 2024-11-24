@@ -3,8 +3,8 @@ import about_sub from "../assets/about_sub.png";
 const AboutSub = () => {
   return (
     <div>
-      <div className="flex items-center justify-center m-[100px]">
-        <div className="w-[550px] m-2">
+      <div className="flex md:flex-row flex-col items-center justify-center m-[50px]">
+        <div className="w-[500px] m-2">
           <img src={about_sub} />
         </div>
 
