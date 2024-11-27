@@ -25,6 +25,9 @@ import { FaRupeeSign } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { SiAdobepremierepro } from "react-icons/si";
 import Request from "../components/Request";
+import CallSupport from "../components/CallSupport";
+import Title from "../components/Title";
+import Review from "../components/Review";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -116,8 +119,8 @@ const Home = () => {
         <AboutSub />
       </div>
 
-      <div className="flex justify-center m-10">
-        <h2 className="text-4xl font-bold text-gray-600">TOP DESTINATIONS</h2>
+      <div>
+        <Title heading="TOP DESTINATIONS" />
       </div>
 
       <div className="flex justify-center">
@@ -250,6 +253,25 @@ const Home = () => {
         </div>
 
         <Request />
+      </div>
+
+      <div>
+        <CallSupport />
+      </div>
+
+      <div>
+        <Title heading="Our Customers Say" />
+      </div>
+
+      <div className="flex flex-col justify-center text-center items-center">
+        <p className="w-[60%]">
+          Discover what our customers have to say about their experience with
+          us. Uniyal Tour and Travel is highly regarded for delivering safe,
+          reliable, and comfortable rides across India. With competitive pricing
+          and a strong focus on customer satisfaction, we have become the
+          preferred choice for all travel needs.
+        </p>
+        <Review />
       </div>
     </div>
   );

@@ -5,3 +5,7 @@
 a.active hr {
   display: block;
 }
+
+.slick-slide > div {
+  margin: 0 10px;
+}
