@@ -20,6 +20,11 @@ import { RiMoneyRupeeCircleFill } from "react-icons/ri";
 import { FaRoad } from "react-icons/fa";
 import AboutSub from "../components/AboutSub";
 import Destinations from "../components/Destinations";
+import { FaBriefcase } from "react-icons/fa";
+import { FaRupeeSign } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
+import { SiAdobepremierepro } from "react-icons/si";
+import Request from "../components/Request";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -116,8 +121,8 @@ const Home = () => {
       </div>
 
       <div className="flex justify-center">
-        <div className="flex flex-wrap text-center gap-2 max-w-[60%] border-4">
-          <div className="w-[350px] border-2">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 text-center">
+          <div className="w-[350px]">
             <img src={destination_1} />
             <Destinations
               heading="Dehradun to Jolly Grant Airport"
@@ -181,6 +186,70 @@ const Home = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="flex justify-center lg:flex-row flex-col bg-gray-600 items-center">
+        <div className="xl:w-[40%] md:w-[70%] w-[100%] p-10 text-white">
+          <div>
+            <h3 className="text-2xl font-bold">WHY CHOOSE US</h3>
+            <p className="my-6">
+              We prioritize reliability, comfort, and safety by offering
+              well-maintained vehicles, experienced drivers, and a simple
+              booking process. Our dedication to providing outstanding customer
+              service, competitive pricing, and flexible travel solutions
+              ensures a seamless and enjoyable journey. Choose Garhwal Travels
+              for your next trip and enjoy unmatched quality and convenience.
+            </p>
+          </div>
+
+          <div className="flex flex-wrap gap-10 my-8">
+            <div>
+              <div className="flex items-center gap-2 font-bold">
+                <FaBriefcase />
+                <h4>Safe and Secure</h4>
+              </div>
+              <div className="w-[250px]">
+                With experienced drivers and well-maintained vehicles, your
+                safety is our priority.
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 font-bold">
+                <FaRupeeSign />
+                <h4>Affordable Rates</h4>
+              </div>
+              <div className="w-[250px]">
+                Transparent pricing with no hidden fees. Travel in style without
+                breaking the bank.
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 font-bold">
+                <IoCall />
+                <h4>24/7 Support</h4>
+              </div>
+              <div className="w-[250px]">
+                Need assistance? Our customer support team is available round
+                the clock to help you.
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 font-bold">
+                <SiAdobepremierepro />
+                <h4>Comfort Guaranteed</h4>
+              </div>
+              <div className="w-[250px]">
+                Enjoy spacious and modern cars, including luxury options for a
+                premium experience.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Request />
       </div>
     </div>
   );
