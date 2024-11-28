@@ -71,16 +71,36 @@ const Review = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="w-3/4 m-auto">
+    <div className="xl:w-3/4 w-[100%] m-auto">
       <div className="m-10">
         <Slider {...settings}>
           {data.map((d, index) => (
             <div
               key={index}
-              className="border-2 shadow-2xl rounded-2xl h-[200px] flex flex-col items-center justify-center p-4 text-center"
+              className="border-2 shadow-2xl rounded-2xl min-h-[250px] flex flex-col items-center justify-center p-4 text-center"
             >
               {" "}
               <p>{d.review}</p>
