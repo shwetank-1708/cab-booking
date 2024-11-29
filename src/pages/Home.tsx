@@ -77,35 +77,35 @@ const Home = () => {
     <div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="h-[60vh] bg-cover bg-center duration-1000 flex justify-center"
+        className="h-[60vh] bg-cover bg-center duration-1000 flex justify-center relative z-10"
       >
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-black text-[70px] font-bold border-b-8 border-dotted border-b-black">
+        <div className="flex flex-col justify-center items-center relative bg-black/60 w-full">
+          <h1 className="text-black text-[70px] font-bold border-b-8 border-dotted border-b-white text-white">
             Uniyal Tour and Travel
           </h1>
-          <p className="text-black text-[40px] font-bold">
+          <p className="text-black text-[40px] font-bold text-white">
             Easy Online Taxi Booking Service in Uttarakhand
           </p>
         </div>
       </div>
 
-      <div className="mt-[-100px]">
+      <div className="mt-[-100px] relative z-20">
         <div className="flex justify-center gap-8 text-center flex-col md:flex-row items-center">
-          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
+          <div className="w-[70%] md:w-[350px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <FaCarAlt className="text-9xl text-blue-950" />
             <HomeServices
               heading="TOP-RATED SERVICE"
               para="We're proud to be rated the best in the city, delivering top-quality service every time."
             />
           </div>
-          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
+          <div className="w-[70%] md:w-[350px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <RiMoneyRupeeCircleFill className="text-9xl text-blue-950" />
             <HomeServices
               heading="EXCLUSIVE DISCOUNTS"
               para="Enjoy special offers and exclusive discounts for our loyal customers."
             />
           </div>
-          <div className="w-[70%] md:w-[300px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
+          <div className="w-[70%] md:w-[350px] flex flex-col items-center border-2 rounded-2xl shadow-2xl bg-white">
             <FaRoad className="text-9xl text-blue-950" />
             <HomeServices
               heading="EASY BOOKING"

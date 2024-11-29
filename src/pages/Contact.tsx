@@ -11,8 +11,8 @@ const Contact = () => {
         style={{ backgroundImage: `url(${main_3})` }}
         className="h-[60vh] bg-cover bg-center duration-1000 flex justify-center"
       >
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-black text-[70px] font-bold border-b-8 border-dotted border-b-black">
+        <div className="flex flex-col justify-center items-center relative bg-black/60 w-full">
+          <h1 className="text-black text-[70px] font-bold border-b-8 border-dotted border-b-white text-white">
             Contact Us
           </h1>
         </div>
