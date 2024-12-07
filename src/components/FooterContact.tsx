@@ -4,6 +4,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { LuMails } from "react-icons/lu";
 import { MdOutlineLocationOn } from "react-icons/md";
 import main_3 from "../assets/main_3.png";
+import { NavLink } from "react-router-dom";
 
 const FooterContact = () => {
   return (
@@ -22,25 +23,37 @@ const FooterContact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 lg:w-[20%] w-[80%]">
+        <div className="flex flex-col gap-2 lg:w-[15%] w-[80%]">
           <h4 className="text-2xl font-bold text-yellow-400 underline">
             Important Links
           </h4>
           <div className="flex items-center gap-2">
             <FaArrowCircleRight className="text-yellow-400" />
-            <p>Home</p>
+            <NavLink to="/">
+              {" "}
+              <p className="hover:text-yellow-400">Home</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-2">
             <FaArrowCircleRight className="text-yellow-400" />
-            <p>About Us</p>
+            <NavLink to="/about">
+              {" "}
+              <p className="hover:text-yellow-400">About Us</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-2">
             <FaArrowCircleRight className="text-yellow-400" />
-            <p>Services</p>
+            <NavLink to="/services">
+              {" "}
+              <p className="hover:text-yellow-400">Services</p>
+            </NavLink>
           </div>
           <div className="flex items-center gap-2">
             <FaArrowCircleRight className="text-yellow-400" />
-            <p>Contact Us</p>
+            <NavLink to="/contact">
+              {" "}
+              <p className="hover:text-yellow-400">Contact Us</p>
+            </NavLink>
           </div>
         </div>
 
