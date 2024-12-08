@@ -5,6 +5,7 @@ import { LuMails } from "react-icons/lu";
 import { MdOutlineLocationOn } from "react-icons/md";
 import main_3 from "../assets/main_3.png";
 import { NavLink } from "react-router-dom";
+// import { Link } from "react-scroll";
 
 const FooterContact = () => {
   return (
@@ -33,6 +34,15 @@ const FooterContact = () => {
               {" "}
               <p className="hover:text-yellow-400">Home</p>
             </NavLink>
+            {/* <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              offset={-70} // Adjust the offset as needed
+              className="hover:text-yellow-400"
+            >
+              Home
+            </Link> */}
           </div>
           <div className="flex items-center gap-2">
             <FaArrowCircleRight className="text-yellow-400" />
